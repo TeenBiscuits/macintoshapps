@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import AppCard from "@/components/AppCard.astro";
+import Introduction from "@/components/Introduction.astro";
+import SeoPage from "@/components/SeoPage.astro";
+
+const apps = await getCollection("apps");
+---
+
+<BaseLayout>
+  <SeoPage slot="head" />
+  <main>
+    <Introduction />
+    <ul
+      class="grid list-none grid-cols-1 gap-x-3 gap-y-6 p-0 md:grid-cols-2 lg:gap-x-12 xl:grid-cols-3"
+    >
+      {apps.map((app) => <AppCard app={app} />)}
+    </ul>
+  </main>
+</BaseLayout>

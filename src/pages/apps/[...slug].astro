@@ -1,0 +1,31 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SeoPost from "@/components/SeoPost.astro";
+
+interface Props {
+  entry: CollectionEntry<"apps">;
+}
+
+export async function getStaticPaths() {
+  const apps = await getCollection("apps");
+  return apps.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout>
+  <SeoPost slot="head" entry={entry} />
+  <div>
+    <h1>{entry.data.title}</h1>
+    <div class="content prose mx-auto dark:prose-invert">
+      <Content />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,51 @@
+---
+import { type CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+import MonetizationBadge from "@/components/MonetizationBadge.astro";
+
+interface Props {
+  app: CollectionEntry<"apps">;
+}
+
+const { app } = Astro.props;
+---
+
+<li>
+  <a href={`/apps/${app.slug}`}>
+    <div class="flex w-full items-center justify-between">
+      <div class="flex items-center gap-1.5 pr-3">
+        <Image
+          src={app.data.icon}
+          width={100}
+          height={100}
+          quality="medium"
+          format="webp"
+          alt={app.data.title}
+          loading="eager"
+          class="size-16"
+        />
+        <div>
+          <div class="flex items-center gap-2">
+            <p>
+              {app.data.title}
+            </p>
+            <div
+              class="flex gap-1 text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+            >
+              {app.data.isOpenSource ? <Icon name="open-source" /> : null}
+              {app.data.isRecommended ? <Icon name="recommended" /> : null}
+            </div>
+          </div>
+          <p
+            class="text-sm font-normal text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+          >
+            {app.data.tagline}
+          </p>
+        </div>
+      </div>
+      <MonetizationBadge app={app} />
+    </div>
+  </a>
+</li>
