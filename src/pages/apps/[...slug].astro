@@ -66,54 +66,6 @@ const { Content } = await app.render();
       </div>
     </div>
 
-    <!-- AppInfoCard -->
-
-    <hr class="mx-auto mt-10 max-w-[80ch]" />
-    <div
-      class="mx-auto grid max-w-[80ch] grid-cols-2 gap-x-6 py-3 sm:grid-cols-4"
-    >
-      <div class="px-3 py-4 text-center">
-        <span
-          class="text-xs font-semibold uppercase text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
-          >Category</span
-        >
-        <div class="capitalize">{app.data.category}</div>
-      </div>
-
-      <div class="px-3 py-4 text-center">
-        <span
-          class="text-xs font-semibold uppercase text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
-          >Monetization</span
-        >
-        <div class="capitalize">{app.data.monetization}</div>
-      </div>
-
-      {
-        app.data.isOpenSource ? (
-          <div class="px-3 py-4 text-center">
-            <span class="text-xs font-semibold uppercase text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
-              Open source
-            </span>
-            <div class="capitalize">yes</div>
-          </div>
-        ) : null
-      }
-
-      {
-        app.data.isRecommended ? (
-          <div class="px-3 py-4 text-center">
-            <span class="text-xs font-semibold uppercase text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
-              Recommended
-            </span>
-            <div class="capitalize">true</div>
-          </div>
-        ) : null
-      }
-    </div>
-    <hr class="mx-auto mb-10 max-w-[80ch]" />
-
-    <!-- AppInfoCard -->
-
     <div
       class="content prose prose-lg prose-neutral mx-auto sm:prose-xl dark:prose-invert"
     >

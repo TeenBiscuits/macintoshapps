@@ -4,10 +4,11 @@ tagline: The default is nonsensical.
 icon: ./icon.png
 link: https://github.com/archagon/sensible-side-buttons
 developerName: archagon
-category: utilities
 monetization: free
 isOpenSource: true
-isRecommended: true
+isFree: true
+isOneTimePurchase: false
+isSubscription: false
 ---
 
 BetterTouchTool (BTT) is a powerful macOS utility that allows you to create custom gestures, keyboard shortcuts, and automations across a variety of input devices like trackpads, mice, and keyboards. It enhances productivity by letting users personalize their workflow with ease. Whether you're looking to perform complex macros or just want to streamline window management, BTT is incredibly versatile.

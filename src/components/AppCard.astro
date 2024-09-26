@@ -33,10 +33,24 @@ const { app } = Astro.props;
               {app.data.title}
             </p>
             <div
-              class="flex gap-1 text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+              class="flex gap-1 font-bold text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
             >
-              {app.data.isOpenSource ? <Icon name="open-source" /> : null}
-              {app.data.isRecommended ? <Icon name="recommended" /> : null}
+              {
+                app.data.isOpenSource ? (
+                  <span class="text-green-500">●</span>
+                ) : null
+              }
+              {app.data.isFree ? <span class="text-blue-500">■</span> : null}
+              {
+                app.data.isOneTimePurchase ? (
+                  <span class="text-yellow-500">▲</span>
+                ) : null
+              }
+              {
+                app.data.isSubscription ? (
+                  <span class="text-red-500">✖</span>
+                ) : null
+              }
             </div>
           </div>
           <p

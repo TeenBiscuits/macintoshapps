@@ -7,5 +7,7 @@ developerName: IINA
 category: utilities
 monetization: free
 isOpenSource: true
-isRecommended: true
+isFree: true
+isOneTimePurchase: false
+isSubscription: false
 ---

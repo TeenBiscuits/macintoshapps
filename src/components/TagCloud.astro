@@ -1,0 +1,45 @@
+---
+import Tag from "./Tag.astro";
+
+const tags = [
+  {
+    name: "Open Source",
+    filter: "isOpenSource",
+    class: "text-base text-green-500",
+    symbol: "●",
+  },
+  {
+    name: "Free",
+    filter: "isFree",
+    class: "text-base text-blue-500",
+    symbol: "■",
+  },
+  {
+    name: "One-Time Purchase",
+    filter: "isOneTimePurchase",
+    class: "text-base text-yellow-500",
+    symbol: "▲",
+  },
+  {
+    name: "Subscription",
+    filter: "isSubscription",
+    class: "text-base text-red-500",
+    symbol: "✖",
+  },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<div
+  class="mx-auto mb-16 grid max-w-screen-md grid-cols-2 gap-3 py-6 sm:grid-cols-4 sm:py-12"
+>
+  {
+    tags.map((tag) => (
+      <Tag href={`/${tag.filter}`} currentPath={currentPath}>
+        <span class={tag.class}>{tag.symbol}</span>
+        {tag.name}
+      </Tag>
+    ))
+  }
+</div>

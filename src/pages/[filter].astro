@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import AppCard from "@/components/AppCard.astro";
+import SeoPage from "@/components/SeoPage.astro";
+import Hero from "@/components/Hero.astro";
+import TagCloud from "@/components/TagCloud.astro";
+
+export async function getStaticPaths() {
+  const filters = [
+    "isOpenSource",
+    "isFree",
+    "isOneTimePurchase",
+    "isSubscription",
+  ];
+
+  return filters.map((filter) => ({
+    params: { filter },
+    props: { filter },
+  }));
+}
+
+const { filter } = Astro.props;
+
+const allApps = await getCollection("apps");
+const filteredApps = allApps.filter((app) => app.data[filter] === true);
+---
+
+<BaseLayout>
+  <SeoPage slot="head" />
+  <main>
+    <Hero />
+    <TagCloud />
+    <ul
+      class="grid list-none grid-cols-1 gap-x-3 gap-y-6 p-0 md:grid-cols-2 lg:gap-x-12 xl:grid-cols-3"
+    >
+      {filteredApps.flatMap((app) => <AppCard app={app} />)}
+    </ul>
+  </main>
+</BaseLayout>

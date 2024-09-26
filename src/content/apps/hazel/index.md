@@ -7,5 +7,7 @@ developerName: Noodlesoft
 category: productivity
 monetization: paid
 isOpenSource: false
-isRecommended: false
+isFree: false
+isOneTimePurchase: true
+isSubscription: false
 ---
