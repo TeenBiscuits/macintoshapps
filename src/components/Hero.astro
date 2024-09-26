@@ -1,0 +1,42 @@
+<section class="py-32 text-center">
+  <h1 class="text-4xl font-semibold sm:text-6xl">
+    <span class="block">Take macOS to</span><span
+      >the <span id="relative" class="text-black"
+        >next level.
+        <span id="highlight"></span></span
+      ></span
+    >
+  </h1>
+  <p
+    class="text-balance pt-3 text-sm text-lightModeForegroundMuted sm:pt-8 sm:text-base dark:text-darkModeForegroundMuted"
+  >
+    A directory of handpicked apps to unlock the true potential of your Mac.
+  </p>
+</section>
+
+<style>
+  #relative {
+    position: relative;
+  }
+
+  #highlight {
+    position: absolute;
+    width: 236px;
+    height: 93px;
+    transform: scale(0.75, 0.5);
+    z-index: -1;
+    left: -2.1rem;
+    top: -1.5rem;
+    background-image: url("/highlight.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: 640px) {
+    #highlight {
+      transform: scaleX(1.15);
+      left: 0.8rem;
+      top: 0;
+    }
+  }
+</style>

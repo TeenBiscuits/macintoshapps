@@ -25,10 +25,11 @@ const { app } = Astro.props;
           alt={app.data.title}
           loading="eager"
           class="size-16"
+          transition:name={`${app.data.title}-icon`}
         />
         <div>
           <div class="flex items-center gap-2">
-            <p>
+            <p transition:name={`${app.data.title}-title`}>
               {app.data.title}
             </p>
             <div
@@ -40,6 +41,7 @@ const { app } = Astro.props;
           </div>
           <p
             class="text-sm font-normal text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+            transition:name={`${app.data.title}-mutedText`}
           >
             {app.data.tagline}
           </p>

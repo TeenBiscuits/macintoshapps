@@ -35,8 +35,8 @@ const appsCollection = defineCollection({
       icon: image().refine((icon) => icon.width >= 256, {
         message: "App icon should be at least 256px wide.",
       }),
+      link: z.string(),
       developerName: z.string(),
-      developerLink: z.string().optional(),
       category: z.enum(appCategories),
       monetization: z.enum(monetizationMethods),
       isOpenSource: z.boolean(),

@@ -1,12 +1,12 @@
 ---
-title: BetterTouchTool
-tagline: Custom shortcuts & gestures.
+title: SensibleSideButtons
+tagline: The default is nonsensical.
 icon: ./icon.png
-link: https://folivora.ai
-developerName: Software Ambiance Corp.
+link: https://github.com/archagon/sensible-side-buttons
+developerName: archagon
 category: utilities
-monetization: paid
-isOpenSource: false
+monetization: free
+isOpenSource: true
 isRecommended: true
 ---
 
