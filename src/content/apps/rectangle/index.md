@@ -10,3 +10,5 @@ isFree: true
 isOneTimePurchase: false
 isSubscription: false
 ---
+
+> Move and resize windows in macOS using keyboard shortcuts or snap areas.

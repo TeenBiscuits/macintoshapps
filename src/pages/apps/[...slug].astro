@@ -6,6 +6,7 @@ import { Icon } from "astro-icon/components";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BackLink from "@/components/BackLink.astro";
 import SeoApp from "@/components/SeoApp.astro";
+import Tag from "@/components/Tag.astro";
 
 interface Props {
   app: CollectionEntry<"apps">;
@@ -64,6 +65,28 @@ const { Content } = await app.render();
           {app.data.developerName}
         </p>
       </div>
+    </div>
+
+    <div
+      class="mx-auto mb-4 grid max-w-screen-md grid-cols-2 gap-3 py-6 sm:grid-cols-4 sm:py-12"
+    >
+
+        {app.data.isOpenSource ? <Tag href={`/isOpenSource`}}>
+        <span class="text-green-500 text-base">●</span>
+        Open Source
+        </Tag> : null}
+        {app.data.isFree ? <Tag href={`/isFree`}}>
+        <span class="text-blue-500 text-base">■</span>
+        Free
+        </Tag> : null}
+        {app.data.isOneTimePurchase ? <Tag href={`/isOneTimePurchase`}}>
+        <span class="text-yellow-500 text-base">▲</span>
+        One Time Purchase
+        </Tag> : null}
+        {app.data.isSubscription ? <Tag href={`/isSubscription`}}>
+        <span class="text-red-500 text-base">✖</span>
+        Subscription
+        </Tag> : null}
     </div>
 
     <div

@@ -11,15 +11,19 @@ isOneTimePurchase: true
 isSubscription: false
 ---
 
-BetterTouchTool (BTT) is a powerful macOS utility that allows you to create custom gestures, keyboard shortcuts, and automations across a variety of input devices like trackpads, mice, and keyboards. It enhances productivity by letting users personalize their workflow with ease. Whether you're looking to perform complex macros or just want to streamline window management, BTT is incredibly versatile.
+> A great, feature packed app that allows you to customize various input devices on your Mac.
 
-One of the standout features is the ability to create app-specific shortcuts, giving users precise control over how their setup functions in different contexts. It’s particularly useful for power users who want to create custom window resizing shortcuts or advanced mouse gestures.
+BetterTouchTool (BTT) allows you to customize various input devices on your Mac like the trackpad, mouse, and keyboard. It works by creating "triggers" for your input device that can range from multifinger taps and gestures to simple keyboard shortcuts. Any shortcut created can be enabled globally or restricted to individual apps.
+
+There's also an [active forum](https://community.folivora.ai) where community members share automation scripts and workflows. BTT can be intimidating due to the sheer amount of options available so the forum can be a great resource.
+
+My favorite shortcut that I've set up is pressing <kbd>⌥ Space</kbd> triggers a right click. This is super useful in Finder—I can navigate through files and perform actions on them (compress, share, quick actions) without touching my mouse.
+
+BTT has a free 45 day trial. There are two licenses you can purchase. The standard license costs $12 and comes with 2 years of free updates. The lifetime license is $24.
 
 ### Key Features:
 - Supports custom gestures and shortcuts for trackpads, mice, and keyboards.
 - Allows app-specific configurations to optimize workflow.
-- Built-in window snapping and management for efficient multitasking.
 - Highly customizable interface with support for macros and scripting.
-- Integrates with Touch Bar customization on compatible MacBooks.
 
 ---

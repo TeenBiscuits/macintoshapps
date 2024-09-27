@@ -1,7 +1,6 @@
 ---
 import { type CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
-import { Icon } from "astro-icon/components";
 
 import MonetizationBadge from "@/components/MonetizationBadge.astro";
 
@@ -23,7 +22,7 @@ const { app } = Astro.props;
           quality="medium"
           format="webp"
           alt={app.data.title}
-          loading="eager"
+          loading="lazy"
           class="size-16"
           transition:name={`${app.data.title}-icon`}
         />
