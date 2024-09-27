@@ -5,6 +5,7 @@ import { Icon } from "astro-icon/components";
 
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BackLink from "@/components/BackLink.astro";
+import Giscus from "@/components/Giscus.astro"
 import SeoApp from "@/components/SeoApp.astro";
 import Tag from "@/components/Tag.astro";
 
@@ -94,5 +95,6 @@ const { Content } = await app.render();
     >
       <Content />
     </div>
+    <Giscus />
   </div>
 </BaseLayout>
