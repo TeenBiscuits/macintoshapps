@@ -7,7 +7,7 @@ import type {
 export const SITE: SiteConfiguration = {
   title: "Macintosh Apps",
   description: "Curated apps for macOS.",
-  url: "https://macintoshapps.com",
+  url: "https://macintoshapps.vercel.app",
   author: "Trevor Tyler Lee",
   locale: "en-CA",
 };
