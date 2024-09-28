@@ -12,3 +12,7 @@ isSubscription: false
 ---
 
 > Firefox is a browser that uses the Gecko rendering engine to display web pages. Free, open source, and private.
+
+
+
+---

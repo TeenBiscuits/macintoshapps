@@ -1,12 +1,15 @@
 ---
-const { href, currentPath } = Astro.props;
+const { href } = Astro.props;
+
+const currentPath = Astro.url.pathname;
 const isActive = href === currentPath;
+
 const tagHref = isActive ? "/" : href;
 ---
 
 <a
   href={tagHref}
-  class={`flex items-center justify-center gap-1 rounded py-1 text-lightModeForegroundMuted dark:text-darkModeForegroundMuted text-xs border border-black/15 hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white ${
+  class={`flex items-center justify-center gap-1 rounded h-[40px] text-lightModeForegroundMuted dark:text-darkModeForegroundMuted text-xs border border-black/15 hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white ${
     isActive
       ? "bg-black/15 dark:bg-white/5 font-bold text-black dark:text-white"
       : ""

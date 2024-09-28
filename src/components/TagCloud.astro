@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 import Tag from "./Tag.astro";
 
 const tags = [
@@ -6,29 +8,27 @@ const tags = [
     name: "Open Source",
     filter: "isOpenSource",
     class: "text-base text-green-500",
-    symbol: "●",
+    symbol: "circle",
   },
   {
     name: "Free",
     filter: "isFree",
     class: "text-base text-blue-500",
-    symbol: "■",
+    symbol: "square",
   },
   {
     name: "One-Time Purchase",
     filter: "isOneTimePurchase",
     class: "text-base text-yellow-500",
-    symbol: "▲",
+    symbol: "triangle",
   },
   {
     name: "Subscription",
     filter: "isSubscription",
     class: "text-base text-red-500",
-    symbol: "✖",
+    symbol: "cross",
   },
 ];
-
-const currentPath = Astro.url.pathname;
 ---
 
 <div
@@ -36,8 +36,10 @@ const currentPath = Astro.url.pathname;
 >
   {
     tags.map((tag) => (
-      <Tag href={`/${tag.filter}`} currentPath={currentPath}>
-        <span class={tag.class}>{tag.symbol}</span>
+      <Tag href={`/${tag.filter}`}>
+        <span class={tag.class}>
+          <Icon name={tag.symbol} />
+        </span>
         {tag.name}
       </Tag>
     ))

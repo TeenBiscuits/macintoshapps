@@ -25,7 +25,10 @@ export async function getStaticPaths() {
 const { filter } = Astro.props;
 
 const allApps = await getCollection("apps");
-const filteredApps = allApps.filter((app) => app.data[filter] === true);
+const filteredApps = allApps.filter((app) => {
+  const booleanValue = app.data[filter as keyof typeof app.data];
+  return typeof booleanValue === "boolean" && booleanValue === true;
+});
 ---
 
 <BaseLayout>
