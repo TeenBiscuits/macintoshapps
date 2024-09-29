@@ -13,9 +13,9 @@ export const SITE: SiteConfiguration = {
 };
 
 export const NAV_LINKS: NavigationLinks = {
-  submit: {
-    path: "/submit",
-    label: "Submit an app",
+  about: {
+    path: "/about",
+    label: "About",
   },
 };
 

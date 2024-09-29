@@ -12,3 +12,5 @@ isSubscription: false
 ---
 
 > PolyCapture for Mac lets you to record webcams, microphones, screens, and apps — individually or simultaneously.
+
+---

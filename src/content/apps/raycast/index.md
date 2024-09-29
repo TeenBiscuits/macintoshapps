@@ -12,3 +12,5 @@ isSubscription: true
 ---
 
 > Open programs quickly, search files fast, make keyboard shortcuts for anything. Explore the Raycast store for hundreds of community developed extensions.
+
+---

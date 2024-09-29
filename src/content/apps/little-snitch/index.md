@@ -12,3 +12,5 @@ isSubscription: false
 ---
 
 > The Little Snitch Network Monitor shows you where your Mac connects to on the Internet. You decide what you want to allow or deny.
+
+---

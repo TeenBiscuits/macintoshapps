@@ -12,3 +12,5 @@ isSubscription: false
 ---
 
 > Saves disk space & bandwidth by compressing images without losing quality.
+
+---

@@ -12,3 +12,5 @@ isSubscription: false
 ---
 
 > Activated by dragging, customizable keyboard shortcuts or via menu bar, Magnet declutters your screen by snapping windows into organized tiles.
+
+---

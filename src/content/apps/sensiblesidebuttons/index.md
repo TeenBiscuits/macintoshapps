@@ -12,3 +12,5 @@ isSubscription: false
 ---
 
 > Actually functional side navigation buttons on your third-party mice in macOS.
+
+---

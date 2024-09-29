@@ -12,3 +12,7 @@ isSubscription: false
 ---
 
 > Block unknown outgoing connections, protecting your privacy and your Mac!
+
+LuLu lets you block outgoing network requests. This is in contrast to the default firewall macOS ships with which only blocks incoming connections.
+
+---

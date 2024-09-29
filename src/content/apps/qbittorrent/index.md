@@ -12,3 +12,5 @@ isSubscription: false
 ---
 
 > The qBittorrent project aims to provide an open source software alternative to µTorrent.
+
+---

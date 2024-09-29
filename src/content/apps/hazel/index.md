@@ -13,3 +13,5 @@ isSubscription: false
 ---
 
 > Hazel watches whatever folders you tell it to, automatically organizing your files according to the rules you create. Have Hazel move files around based on name, date, type, what site it came from and much more.
+
+---

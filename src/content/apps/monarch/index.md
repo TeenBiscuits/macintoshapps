@@ -12,3 +12,5 @@ isSubscription: false
 ---
 
 > Open and quit apps, direct link to your favorite websites and tools, calculate with natural language, search your clipboard history, take notes, and much more.
+
+---

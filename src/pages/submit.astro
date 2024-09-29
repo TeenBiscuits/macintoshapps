@@ -1,25 +1,33 @@
 ---
-import { SOCIAL_LINKS } from "@/siteConfig";
-
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 import SeoPage from "@/components/SeoPage.astro";
 ---
 
 <BaseLayout>
-  <SeoPage slot="head" title="Contact" />
-  <h2 class="mb-3 text-lg font-bold">Submit an app</h2>
-  <ul class="grid list-none gap-2 p-0">
-    {
-      Object.keys(SOCIAL_LINKS).map((socialLinkKey) => {
-        return (
-          <li>
-            <a href={SOCIAL_LINKS[socialLinkKey].url}>
-              {SOCIAL_LINKS[socialLinkKey].label}
-            </a>
-          </li>
-        );
-      })
-    }
-  </ul>
+  <SeoPage slot="head" title="Submit an app" />
+  <section class="prose dark:prose-invert">
+    <p>
+      You can submit an app by making a pull request on <a
+        href="https://github.com/trevortylerlee/macintoshapps">GitHub</a
+      >. Add a directory under <code>src/content/apps</code> -- the directory's name
+      should be the name of your app. Inside the directory, there should be two files:
+    </p>
+    <ul>
+      <li>An <code>index.md</code> file with the appropriate frontmatter</li><li
+      >
+        Your app's icon (any format is fine if it supports transluscency. Make
+        sure it is linked correcty in the <code>index.md</code> frontmatter.)
+      </li>
+    </ul>
+    <p>
+      Please ensure your app icon is square, sized correctly (under 512px ×
+      512px), and has appropriate margins.
+    </p>
+    <p>
+      Questions? Feel free to <a href="https://twitter.com/boogerbuttcheek"
+        >reach out</a
+      >.
+    </p>
+  </section>
 </BaseLayout>
