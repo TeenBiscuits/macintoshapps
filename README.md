@@ -1,50 +1,35 @@
-# Introducing Barebones 🦴
+![macintosh apps cover](https://github.com/user-attachments/assets/07deb118-e0c3-499c-9909-9964b2888701)
 
-![barebones-cover](https://github.com/user-attachments/assets/bde6d3af-472f-4320-96ec-b70040098ea9)
+Welcome to Macintosh Apps, a curated collection of beautifully designed, high quality applications for macOS. This directory is ad-free, providing an unbiased platform to explore the best of what macOS has to offer. Our goal is to help you discover incredible software to enhance your productivity, creativity, and everyday workflows.
 
-[View demo](https://barebones.superwebthemes.com/)
+Developers are welcome to contribute—you are encouraged to submit a pull request to add your app to the directory. We've also integrated comments using [Giscus](https://giscus.app) so users can share their experiences and engage in conversations with others. **A GitHub account is required to comment.**
 
-Welcome to Barebones, an open source template for [Astro](https://astro.build/) designed for simplicity and flexibility. Whether you're a seasoned developer or just starting out, Barebones provides everything you need to kickstart your next blog with minimal setup.
+Whether you are looking for open source tools or premium apps, we've gathered a diverse selection of standout options. Join us in celebrating great design and functionality on Macintosh Apps!
 
-Head over to the [repository](https://github.com/superwebthemes/barebones) and check out our [documentation](https://barebones.superwebthemes.com) to get started.
+## App Submission Guidelines
 
-## Key features
+Submit an application by making a pull request on GitHub. Add a directory under `src/content/apps` -- the directory's name should be the name of the app. Inside the directory, there should be two files:
 
-- **Batteries included:** Get started immediately with a ready-to-use setup. Start writing right away, no extensive configuration required.
-- **Fast by default:** Leverage the power of Astro, Tailwind CSS, and Markdown to create fast, lightweight web pages.
-- **Extensible and customizable:** Perfect foundation to build upon and meet your unique needs.
-- **SEO-friendly:** Sitemap, RSS feeds, and Open Graph protocol support out of the box.
-- **Best practices:** Follows industry best practices for development, ensuring high-quality, maintainable code.
-- **Accessible:** Dark and light mode support, keyboard navigation, and semantic HTML. Fully compliant with WCAG standards.
-- **Free and open source:** Join the community and contribute to make this project even better!
+- An `index.md` file with the appropriate frontmatter
+- Your app's icon (any format is fine if it supports transluscency. Make sure it is linked correcty in the `index.md` frontmatter.)
 
-## Core Web Vitals
+Please ensure yoru app icon is square and has the appropriate margins.
 
-Performance: **100**
+Here's an example of what the `index.md` looks like for [Alfred](https://www.alfredapp.com).
 
-Accessibility: **100**
+```md
+---
+title: Alfred
+tagline: Boost efficiency.
+icon: ./icon.png
+link: https://www.alfredapp.com
+developerName: Running with Crayons Ltd.
+monetization: freemium
+isOpenSource: false
+isFree: false
+isOneTimePurchase: true
+isSubscription: false
+---
+```
 
-Best Practices: **100**
-
-SEO: **100**
-
-## Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## Further reading
-
-Read the [documentation for Barebones](https://docs.superwebthemes.com), join our [Discord server](https://discord.gg/V5MCBCsAjJ), or find us on X (Twitter) at [@superwebthemes](https://x.com/superwebthemes).
-
-## Styled examples
-
-If you're interested in predesigned [websites built with Barebones](https://superwebthemes.com), check out **SuperWeb Themes** — a variety of expertly designed Barebones examples by us.
+Questions? Feel free to [reach out](https://twitter.com/boogerbuttcheek).
