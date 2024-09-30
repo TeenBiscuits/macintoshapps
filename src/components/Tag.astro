@@ -11,11 +11,18 @@ const tagHref = isActive ? "/" : href;
 
 <a
   href={tagHref}
-  class={`flex items-center justify-center gap-1 rounded h-[40px] text-lightModeForegroundMuted dark:text-darkModeForegroundMuted text-xs border border-black/15 hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white ${
-    isActive
-      ? "bg-black/15 dark:bg-white/5 font-bold text-black dark:text-white"
-      : ""
-  }`}
+  class:list={{
+    "flex h-[40px] items-center justify-center gap-1 rounded border border-black/15 text-xs text-lightModeForegroundMuted dark:border-white/20 dark:text-darkModeForegroundMuted": true,
+    "hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black":
+      !isActive,
+    "dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white":
+      !isActive,
+    "bg-black/15 font-bold text-black dark:bg-white/5 dark:text-white":
+      isActive,
+    "hover:bg-black/10 focus-visible:bg-black/10": isActive,
+    "dark:hover:bg-white/10 dark:hover:text-white dark:focus-visible:bg-white/10 dark:focus-visible:text-white":
+      isActive,
+  }}
 >
   <slot />
 </a>

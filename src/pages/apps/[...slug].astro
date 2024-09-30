@@ -6,7 +6,7 @@ import { Icon } from "astro-icon/components";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BackLink from "@/components/BackLink.astro";
 import Giscus from "@/components/Giscus.astro"
-import SeoApp from "@/components/SeoApp.astro";
+import SeoPost from "@/components/SeoPost.astro";
 import Tag from "@/components/Tag.astro";
 
 interface Props {
@@ -26,7 +26,7 @@ const { Content } = await app.render();
 ---
 
 <BaseLayout>
-  <SeoApp slot="head" entry={app} />
+  <SeoPost slot="head" entry={app} />
   <div>
     <div class="mx-auto max-w-[80ch] pt-12">
       <BackLink />
