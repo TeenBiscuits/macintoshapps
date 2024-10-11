@@ -4,11 +4,13 @@ import { formatDate } from "@/lib/util";
 const { post } = Astro.props;
 ---
 
-<li class="flex flex-col no-underline sm:flex-row sm:justify-between">
+<li class="flex flex-col no-underline">
   <a href={`/blog/${post.slug}`}>
-    <span>{post.data.title}</span>
+    <span class="text-lg">{post.data.title}</span>
   </a>
-  <div class="text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
+  <div
+    class="text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+  >
     {formatDate(post.data.publicationDate)}
   </div>
 </li>
