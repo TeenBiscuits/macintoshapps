@@ -40,13 +40,12 @@ This project was born out of wanting to learn more on how macOS deals with app i
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/e2e16378-dbed-4cd4-a20b-23dd0d806fdf" align="left" width="400" />
+![](https://github.com/user-attachments/assets/e2e16378-dbed-4cd4-a20b-23dd0d806fdf)
 
-<img src="https://github.com/user-attachments/assets/4221d3ce-6190-45da-9a35-f9554196b2bf" align="center" width="400" />
-<p></p>
-<img src="https://github.com/user-attachments/assets/fc2f6d24-d6c9-4aec-91da-3d0adc05df48" align="left" width="400" />
+![](https://github.com/user-attachments/assets/4221d3ce-6190-45da-9a35-f9554196b2bf)
 
-<img src="https://github.com/user-attachments/assets/d8e43558-071f-4ff8-8557-b0508c063c1c" align="center" width="400" />
-<p></p>
+![](https://github.com/user-attachments/assets/fc2f6d24-d6c9-4aec-91da-3d0adc05df48)
+
+![](https://github.com/user-attachments/assets/d8e43558-071f-4ff8-8557-b0508c063c1c)
 
 ---
